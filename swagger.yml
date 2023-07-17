@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  description: 'This is a sample server Petstore server. You can find out more about
+  description: 'This is a sample server Petstore server. u can find out more about
     Swagger at [http://swagger.io](http://swagger.io) or on IRC [irc.freenode.net, #swagger](http://swagger.io/irc/).  For
     this sample, you can use the api key `special-key` to test all the auth filters.'
   version: 1.0.0
