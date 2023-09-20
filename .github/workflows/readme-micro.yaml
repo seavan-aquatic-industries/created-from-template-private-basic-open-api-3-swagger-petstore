@@ -1,11 +1,11 @@
 name: ReadMe Micro
 
-# Run workflow for every push to the `master` branch
+# Run workflow for every push to the `main` branch
 on:
   push:
-    branches:
-      - master
-      - main
+    branches: [main]
+  pull_request:
+    branches: [main]
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -15,7 +15,7 @@ jobs:
 
       # Run GitHub Action to sync all OpenAPI files in the repo
       - name: GitHub Action
-        uses: readmeio/readme-micro@v2.4.0
+        uses: readmeio/readme-micro@v2
         env:
           BASE_URL: ${{ vars.BASE_URL }}
         with:
